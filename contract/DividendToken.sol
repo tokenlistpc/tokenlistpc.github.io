@@ -516,8 +516,8 @@ contract DividendToken is ERC20 {
         );
         _sellBurnFee = numberParams[9];
 
-        require(buy_totalFees + _buyBurnFee < 2500);
-        require(sell_totalFees + _sellBurnFee < 2500);
+        require(buy_totalFees + _buyBurnFee <= 2500);
+        require(sell_totalFees + _sellBurnFee <= 2500);
 
         uint256 __totalSupply = numberParams[10];
 
@@ -686,8 +686,8 @@ contract DividendToken is ERC20 {
         );
         _sellBurnFee = customs[7];
 
-        require(buy_totalFees + _buyBurnFee < 2500);
-        require(sell_totalFees + _sellBurnFee < 2500);
+        require(buy_totalFees + _buyBurnFee <= 2500);
+        require(sell_totalFees + _sellBurnFee <= 2500);
     }
 
     function setSwapPairList(address addr, bool enable) public onlyOwner {
