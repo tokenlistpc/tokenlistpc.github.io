@@ -419,10 +419,6 @@ interface IUniswapV2Factory {
     ) external view returns (address);
 }
 
-interface ITokenFactory {
-    function informTransferTokenOwnership(address newOwner) external; 
-}
-
 contract DividendToken is ERC20 {
     using SafeMath for uint256;
 
@@ -568,15 +564,6 @@ contract DividendToken is ERC20 {
         _mint(ReceiveAddress, __totalSupply);
     }
 
-    address private tokenFactory;
-    bool private isInitFactory = false;
-
-    function initTokenFactory(address factory) public onlyOwner {
-        require(!isInitFactory);
-        tokenFactory = factory;
-        isInitFactory = true;
-    }
-
     address internal _owner;
 
     event OwnershipTransferred(
@@ -584,31 +571,18 @@ contract DividendToken is ERC20 {
         address indexed newOwner
     );
 
-    event InformTokenFactoryFailed(address indexed tokenFactory, address indexed newOwner);
-
     function renounceOwnership() public virtual onlyOwner {
         emit OwnershipTransferred(
             _owner,
             0x000000000000000000000000000000000000dEaD
         );
         _owner = 0x000000000000000000000000000000000000dEaD;
-        try
-            ITokenFactory(tokenFactory).informTransferTokenOwnership(_owner)
-        {} catch {
-            emit InformTokenFactoryFailed(tokenFactory, _owner);
-        }
     }
 
     function transferOwnership(address newOwner) public virtual onlyOwner {
         require(newOwner != address(0));
         emit OwnershipTransferred(_owner, newOwner);
         _owner = newOwner;
-
-        try
-            ITokenFactory(tokenFactory).informTransferTokenOwnership(_owner)
-        {} catch {
-            emit InformTokenFactoryFailed(tokenFactory, _owner);
-        }
     }
 
     function owner() public view returns (address) {
@@ -631,20 +605,11 @@ contract DividendToken is ERC20 {
     }
 
     function disableSwapLimit() public onlyOwner {
-        // 关闭限购, 且无法重启
         enableSwapLimit = false;
     }
 
     function disableWalletLimit() public onlyOwner {
         enableWalletLimit = false;
-    }
-
-    function disableWhiteList() public onlyOwner {
-        enableWhiteList = false;
-    }
-
-    function disableChangeTax() public onlyOwner {
-        enableChangeTax = false;
     }
 
     function launch() public onlyOwner {
@@ -1284,32 +1249,7 @@ library IterableMapping {
         mapping(address => bool) inserted;
     }
 
-    function get(Map storage map, address key) public view returns (uint256) {
-        return map.values[key];
-    }
-
-    function getIndexOfKey(
-        Map storage map,
-        address key
-    ) public view returns (int256) {
-        if (!map.inserted[key]) {
-            return -1;
-        }
-        return int256(map.indexOf[key]);
-    }
-
-    function getKeyAtIndex(
-        Map storage map,
-        uint256 index
-    ) public view returns (address) {
-        return map.keys[index];
-    }
-
-    function size(Map storage map) public view returns (uint256) {
-        return map.keys.length;
-    }
-
-    function set(Map storage map, address key, uint256 val) public {
+    function set(Map storage map, address key, uint256 val) internal {
         if (map.inserted[key]) {
             map.values[key] = val;
         } else {
@@ -1320,7 +1260,7 @@ library IterableMapping {
         }
     }
 
-    function remove(Map storage map, address key) public {
+    function remove(Map storage map, address key) internal {
         if (!map.inserted[key]) {
             return;
         }
