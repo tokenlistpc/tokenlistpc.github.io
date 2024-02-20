@@ -763,7 +763,7 @@ contract DividendToken is ERC20 {
                 require(isLaunch, "Transfer closed");
             }
             if(enableKillBlock) {
-                require(block.timestamp > kb + startTradeBlock, "block killed");
+                require(block.number > kb + startTradeBlock, "block killed");
             }
             if (enableSwapLimit) {
                 require(amount <= maxSwapAmount, "> maxswap amount");

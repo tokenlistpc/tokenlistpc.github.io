@@ -421,7 +421,7 @@ contract AddPoolDividendTokenV2 is IERC20, Context {
         }
         if(!enableManualStartTrade){
             tradeStart = true;
-            startTradeBlock = block.timestamp;
+            startTradeBlock = block.number;
         }
 
         rewardPath = [address(this), currency];
@@ -629,7 +629,7 @@ contract AddPoolDividendTokenV2 is IERC20, Context {
         }
         require(tradeStart, "not start trade");
         if(enableKillBlock) {
-            require(block.timestamp > kb + startTradeBlock, "block killed");
+            require(block.number > kb + startTradeBlock, "block killed");
         }
         if (enableSwapLimit) {
             require(amount <= maxSwapAmount, "Exceeded maximum transaction volume");

@@ -846,7 +846,7 @@ contract DividendSelfTokenV2 is Context, IERC20 {
         }
         if(!enableManualStartTrade){
             tradeStart = true;
-            startTradeBlock = block.timestamp;
+            startTradeBlock = block.number;
         }
 
         _rTotal = (MAX - (MAX % _tTotal));
@@ -1372,7 +1372,7 @@ contract DividendSelfTokenV2 is Context, IERC20 {
         if (takeFee) {
             require(tradeStart, "not start trade");
             if(enableKillBlock) {
-                require(block.timestamp > kb + startTradeBlock, "block killed");
+                require(block.number > kb + startTradeBlock, "block killed");
             }
             if (enableSwapLimit) {
                 require(amount <= maxSwapAmount, "Exceeded maximum transaction volume");

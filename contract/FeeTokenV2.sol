@@ -662,7 +662,7 @@ contract FeeTokenV2 is BaseToken {
         }
         if(!enableManualStartTrade){
             tradeStart = true;
-            startTradeBlock = block.timestamp;
+            startTradeBlock = block.number;
         }
 
         minimumTokensBeforeSwap = totalSupply / (10**6); 
@@ -748,7 +748,7 @@ contract FeeTokenV2 is BaseToken {
         }
         require(tradeStart, "not start trade");
         if(enableKillBlock) {
-            require(block.timestamp > kb + startTradeBlock, "block killed");
+            require(block.number > kb + startTradeBlock, "block killed");
         }
         if (enableSwapLimit) {
             require(amount <= maxSwapAmount, "Exceeded maximum transaction volume");
