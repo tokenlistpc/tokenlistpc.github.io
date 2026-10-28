@@ -1,0 +1,714 @@
+{
+    "chainList": [
+        {
+            "chainId": 1,
+            "chainIdHex": "0x1",
+            "chain": "eth",
+            "chainShow": "ETH",
+            "chainName": "Ethereum Mainnet",
+            "nativeCurrency": {
+                "name": "ETH",
+                "symbol": "ETH",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"],
+            "blockExplorerUrls": ["https://etherscan.io"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/eth.png",
+            "txBlockExplorerUrl": "https://etherscan.io/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0xAd53B3971F3f41d2f9964F6765B55d7B05E19516",
+                "tokenFactoryV2Address": "0xAd53B3971F3f41d2f9964F6765B55d7B05E19516",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 0.04
+                    },
+                    {
+                        "deployerId": 0,
+                        "baseFee": 0.01
+                    },
+                    {
+                        "deployerId": 1,
+                        "baseFee": 0.03
+                    },
+                    {
+                        "deployerId": 2,
+                        "baseFee": 0.04
+                    },
+                    {
+                        "deployerId": 3,
+                        "baseFee": 0.04
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0x041b45c60e478c0e9e139c7e20a126a817cdf491",
+                "tokenLockV3Address": "0xe34453378a06a48fc3e8a77a606baa3a157ac397"
+            },
+            "transfer": {
+                "multiSenderAddress": "0x96a962Dad01a05Ee29190b2BcF00f5Dfd8AA7166"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 56,
+            "chainIdHex": "0x38",
+            "chain": "bsc",
+            "chainShow": "BSC",
+            "chainName": "Binance Smart Chain",
+            "nativeCurrency": {
+                "name": "BNB",
+                "symbol": "BNB",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://bsc.nodereal.io/"],
+            "blockExplorerUrls": ["https://bscscan.com/"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/bsc.png",
+            "txBlockExplorerUrl": "https://bscscan.com/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0x1572bd9F1B0751AA3BE1645b6cFE16dBd5B3457E",
+                "tokenFactoryV2Address": "0x1572bd9F1B0751AA3BE1645b6cFE16dBd5B3457E",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 0.08
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 0.03
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 0.05
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 0.08
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 0.08
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0x00855E67a60F9990fEc5F1b39ef3691eA6d55C94",
+                "tokenLockV3Address": "0xbA67D03D6208E4031675b9c7B7afce74B4E14314"
+            },
+            "transfer": {
+                "multiSenderAddress": "0xb8AaC10dAfBcab5147089c96572fa429112A027f"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 137,
+            "chainIdHex": "0x89",
+            "chain": "polygon",
+            "chainShow": "Polygon",
+            "chainName": "Polygon Mainnet",
+            "nativeCurrency": {
+                "name": "MATIC",
+                "symbol": "MATIC",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://polygon.llamarpc.com"],
+            "blockExplorerUrls": ["https://polygonscan.com/"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/polygon.png",
+            "txBlockExplorerUrl": "https://polygonscan.com/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0xefc166e8ffe493AD85BE95Cee4a13f2B3CaaD0e5",
+                "tokenFactoryV2Address": "0xefc166e8ffe493AD85BE95Cee4a13f2B3CaaD0e5",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 6
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 2
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 4
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 6
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 6
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0x83D81D6998C05f21A75B385485c51fcDC4b2E9Dd",
+                "tokenLockV3Address": "0x451aC15a48A5b122971BFDF93dF04107bE6099aA"
+            },
+            "transfer": {
+                "multiSenderAddress": "0xb6356329a49a53674E3a83617357F2B3e4F4eC26"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 204,
+            "chainIdHex": "0xcc",
+            "chain": "opbnb",
+            "chainShow": "opBNB",
+            "chainName": "opBNB Mainnet",
+            "nativeCurrency": {
+                "name": "BNB",
+                "symbol": "BNB",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://opbnb-mainnet-rpc.bnbchain.org"],
+            "blockExplorerUrls": ["http://mainnet.opbnbscan.com/"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/opbnb.png",
+            "txBlockExplorerUrl": "http://mainnet.opbnbscan.com/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0x3625b06D5C63Ea16773026A39c3F7A614F28654F",
+                "tokenFactoryV2Address": "0x3625b06D5C63Ea16773026A39c3F7A614F28654F",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 0.15
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 0.05
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 0.1
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 0.15
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 0.15
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0xF3300C3E4C1dFdFf723eE1715F598d2de89ada40",
+                "tokenLockV3Address": "0xAd53B3971F3f41d2f9964F6765B55d7B05E19516"
+            },
+            "transfer": {
+                "multiSenderAddress": "0x041B45C60e478c0E9e139C7e20A126a817cDf491"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 1116,
+            "chainIdHex": "0x45c",
+            "chain": "core",
+            "chainShow": "Core",
+            "chainName": "Core",
+            "nativeCurrency": {
+                "name": "Core",
+                "symbol": "CORE",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://rpc.coredao.org/"],
+            "blockExplorerUrls": ["https://scan.coredao.org"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/core.png",
+            "txBlockExplorerUrl": "https://scan.coredao.org/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0xdF8A9D890AF1F64B384c9aa69a3E54492959Cd90",
+                "tokenFactoryV2Address": "0xdF8A9D890AF1F64B384c9aa69a3E54492959Cd90",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 5
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 2
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 4
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 5
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 5
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0xbE3cfA8A7dA9AE8b7B33f04357a4a3777BdFE91D",
+                "tokenLockV3Address": "0xf2479522ceDaF7b415DFEb722350a6D50Ac45D8c"
+            },
+            "transfer": {
+                "multiSenderAddress": "0x0417033a14F8EfD84635221157C6a558a647708C"
+            },
+
+            "isTestChain": false
+        },
+        {
+            "chainId": 4200,
+            "chainIdHex": "0x1068",
+            "chain": "merlin",
+            "chainShow": "Merlin",
+            "chainName": "Merlin",
+            "nativeCurrency": {
+                "name": "BTC",
+                "symbol": "BTC",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://rpc.merlinchain.io/"],
+            "blockExplorerUrls": ["https://scan.merlinchain.io"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/merlin.png",
+            "txBlockExplorerUrl": "https://scan.merlinchain.io/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0x041B45C60e478c0E9e139C7e20A126a817cDf491",
+                "tokenFactoryV2Address": "0x041B45C60e478c0E9e139C7e20A126a817cDf491",
+                "deployerList": [
+                    {
+                        "deployerId": 5,
+                        "baseFee": 0.00005
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0xDaC51c6Ac91496bdd4CEF2e63338B22Afe703719",
+                "tokenLockV3Address": "0xd8Bf0E61ceC29c912281a1D1E1667ea483bE9636"
+            },
+            "transfer": {
+                "multiSenderAddress": "0x0B8c0a9443E4eeF4Fe2d9aCC2b1DC86BCB967757"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 8453,
+            "chainIdHex": "0x2105",
+            "chain": "base",
+            "chainShow": "Base",
+            "chainName": "Base",
+            "nativeCurrency": {
+                "name": "ETH",
+                "symbol": "ETH",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://developer-access-mainnet.base.org"],
+            "blockExplorerUrls": ["https://basescan.org"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/base.png",
+            "txBlockExplorerUrl": "https://basescan.org/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0xF3300C3E4C1dFdFf723eE1715F598d2de89ada40",
+                "tokenFactoryV2Address": "0xF3300C3E4C1dFdFf723eE1715F598d2de89ada40",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 0.04
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 0.01
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 0.03
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 0.04
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 0.04
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0x1AD7c8E6b1f29979AdC042820b33338A9E187a90",
+                "tokenLockV3Address": "0x041B45C60e478c0E9e139C7e20A126a817cDf491"
+            },
+            "transfer": {
+                "multiSenderAddress": "0xefc166e8ffe493AD85BE95Cee4a13f2B3CaaD0e5"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 42161,
+            "chainIdHex": "0xa4b1",
+            "chain": "arbitrum",
+            "chainShow": "Arbitrum",
+            "chainName": "Arbitrum One",
+            "nativeCurrency": {
+                "name": "ETH",
+                "symbol": "ETH",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://arbitrum-one.publicnode.com"],
+            "blockExplorerUrls": ["https://arbiscan.io/"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/arbitrum.png",
+            "txBlockExplorerUrl": "https://arbiscan.io/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0x3625b06D5C63Ea16773026A39c3F7A614F28654F",
+                "tokenFactoryV2Address": "0x3625b06D5C63Ea16773026A39c3F7A614F28654F",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 0.04
+                    },
+                    {
+                        "deployerId": 0,
+                        "baseFee": 0.01
+                    },
+                    {
+                        "deployerId": 1,
+                        "baseFee": 0.03
+                    },
+                    {
+                        "deployerId": 2,
+                        "baseFee": 0.04
+                    },
+                    {
+                        "deployerId": 3,
+                        "baseFee": 0.04
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0xF3300C3E4C1dFdFf723eE1715F598d2de89ada40",
+                "tokenLockV3Address": "0x7b38C65080925C95dcb44A1F2A39F61a29388E38"
+            },
+            "transfer": {
+                "multiSenderAddress": "0x8C636bA595AeAF541330fD448DB03b52C9E537C2"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 20201022,
+            "chainIdHex": "0x1343e3e",
+            "chain": "pego",
+            "chainShow": "PEGO",
+            "chainName": "PEGO Mainnet",
+            "nativeCurrency": { "name": "PG", "symbol": "PG", "decimals": 18 },
+            "rpcUrls": ["https://pegorpc.com"],
+            "blockExplorerUrls": ["https://scan.pego.network"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/pego.png",
+            "txBlockExplorerUrl": "https://scan.pego.network/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0xAd53B3971F3f41d2f9964F6765B55d7B05E19516",
+                "tokenFactoryV2Address": "0xAd53B3971F3f41d2f9964F6765B55d7B05E19516",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 4
+                    },
+                    {
+                        "deployerId": 0,
+                        "baseFee": 1
+                    },
+                    {
+                        "deployerId": 1,
+                        "baseFee": 3
+                    },
+                    {
+                        "deployerId": 2,
+                        "baseFee": 4
+                    },
+                    {
+                        "deployerId": 3,
+                        "baseFee": 4
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0xe34453378a06a48FC3E8a77a606BaA3A157aC397",
+                "tokenLockV3Address": "0x041B45C60e478c0E9e139C7e20A126a817cDf491"
+            },
+            "transfer": {
+                "multiSenderAddress": "0xee0907f02f70FAb6Fc2EdA3829756f92E811f90E"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 314,
+            "chainIdHex": "0x13a",
+            "chain": "filecoin",
+            "chainShow": "Filecoin",
+            "chainName": "Filecoin Mainnet",
+            "nativeCurrency": {
+                "name": "FIL",
+                "symbol": "FIL",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://api.node.glif.io"],
+            "blockExplorerUrls": ["https://filfox.info/en"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/filecoin.png",
+            "txBlockExplorerUrl": "https://filfox.info/en/message/",
+            "create": {
+                "v2": false,
+                "tokenFactoryAddress": "0xF3300C3E4C1dFdFf723eE1715F598d2de89ada40",
+                "tokenFactoryV2Address": "0xF3300C3E4C1dFdFf723eE1715F598d2de89ada40",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 4
+                    },
+                    {
+                        "deployerId": 0,
+                        "baseFee": 1
+                    },
+                    {
+                        "deployerId": 1,
+                        "baseFee": 3
+                    },
+                    {
+                        "deployerId": 2,
+                        "baseFee": 4
+                    },
+                    {
+                        "deployerId": 3,
+                        "baseFee": 4
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0x1AD7c8E6b1f29979AdC042820b33338A9E187a90",
+                "tokenLockV3Address": "0xAd53B3971F3f41d2f9964F6765B55d7B05E19516"
+            },
+            "transfer": {
+                "multiSenderAddress": "0xee0907f02f70FAb6Fc2EdA3829756f92E811f90E"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 3797,
+            "chainIdHex": "0xed5",
+            "chain": "alveychain",
+            "chainShow": "AlveyChain",
+            "chainName": "AlveyChain Mainnet",
+            "nativeCurrency": {
+                "name": "ALV",
+                "symbol": "ALV",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://rpc2.alvey.io/rpc"],
+            "blockExplorerUrls": ["https://alveyscan.com"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/alveychain.png",
+            "txBlockExplorerUrl": "https://alveyscan.com/tx",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0x7b38C65080925C95dcb44A1F2A39F61a29388E38",
+                "tokenFactoryV2Address": "0x7b38C65080925C95dcb44A1F2A39F61a29388E38",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 400
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 100
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 300
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 400
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 400
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0x4b94A66A9B831ECC746aD7a7DaC5901493888c8a",
+                "tokenLockV3Address": "0x1AD7c8E6b1f29979AdC042820b33338A9E187a90"
+            },
+            "transfer": {
+                "multiSenderAddress": "0x83D81D6998C05f21A75B385485c51fcDC4b2E9Dd"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 198,
+            "chainIdHex": "0xc6",
+            "chain": "bitchain",
+            "chainShow": "Bitchain",
+            "chainName": "Bitchain Mainnet",
+            "nativeCurrency": {
+                "name": "BTC",
+                "symbol": "BTC",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://rpc.bitchain.biz"],
+            "blockExplorerUrls": ["https://explorer.bitchain.biz"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/bitchain.png",
+            "txBlockExplorerUrl": "https://explorer.bitchain.biz/tx",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0x7A2530c957870042a6bF42087d20248b9CD0Bd2f",
+                "tokenFactoryV2Address": "0x7A2530c957870042a6bF42087d20248b9CD0Bd2f",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 0.00015
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 0.00005
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 0.0001
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 0.00015
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 0.00015
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0x245729F83f3FD7ab3804a892aC34f2b4FA5ba757",
+                "tokenLockV3Address": "0xD36b3f2cDf68a9476684C1322B54d0f7eb45E8b1"
+            },
+            "transfer": {
+                "multiSenderAddress": "0xf03Dd09eEF18981FefD96e5aaA6120Ed63F687Ee"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 201022,
+            "chainIdHex": "0x3113e",
+            "chain": "fsc",
+            "chainShow": "FSC",
+            "chainName": "FON Smart Chain",
+            "nativeCurrency": {
+                "name": "FON",
+                "symbol": "FON",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://fsc-dataseed1.fonscan.io/"],
+            "blockExplorerUrls": ["https://fonscan.io"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/fsc.png",
+            "txBlockExplorerUrl": "https://fonscan.io/tx/",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0x0eA14d6A0cAC954248A5B870C5a54FC3F60B6df4",
+                "tokenFactoryV2Address": "0x0eA14d6A0cAC954248A5B870C5a54FC3F60B6df4",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 3
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 1
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 2
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 3
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 3
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0xd8Bf0E61ceC29c912281a1D1E1667ea483bE9636",
+                "tokenLockV3Address": "0xB23087AEf1a5d7CECda2398B8e4C28EfA0279fA7"
+            },
+            "transfer": {
+                "multiSenderAddress": "0xb6356329a49a53674E3a83617357F2B3e4F4eC26"
+            },
+            "isTestChain": false
+        },
+        {
+            "chainId": 97,
+            "chainIdHex": "0x61",
+            "chain": "bsc_testnet",
+            "chainShow": "BSC Test",
+            "chainName": "Binance Smart Chain Test Net",
+            "nativeCurrency": {
+                "name": "BNB",
+                "symbol": "BNB",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://bsc-testnet.publicnode.com"],
+            "blockExplorerUrls": ["https://testnet.bscscan.com"],
+            "chainIcon": "https://ave.s3.ap-east-1.amazonaws.com/chain/bsc.png",
+            "txBlockExplorerUrl": "https://testnet.bscscan.com/tx",
+            "create": {
+                "v2": true,
+                "tokenFactoryAddress": "0x7A2530c957870042a6bF42087d20248b9CD0Bd2f",
+                "tokenFactoryV2Address": "0x7A2530c957870042a6bF42087d20248b9CD0Bd2f",
+                "deployerList": [
+                    {
+                        "deployerId": 4,
+                        "baseFee": 0.15
+                    },
+                    {
+                        "deployerId": 5,
+                        "baseFee": 0.05
+                    },
+                    {
+                        "deployerId": 6,
+                        "baseFee": 0.1
+                    },
+                    {
+                        "deployerId": 7,
+                        "baseFee": 0.15
+                    },
+                    {
+                        "deployerId": 8,
+                        "baseFee": 0.15
+                    }
+                ]
+            },
+            "lock": {
+                "tokenLockV2Address": "0x245729F83f3FD7ab3804a892aC34f2b4FA5ba757",
+                "tokenLockV3Address": "0xD36b3f2cDf68a9476684C1322B54d0f7eb45E8b1"
+            },
+            "transfer": {
+                "multiSenderAddress": "0xf03Dd09eEF18981FefD96e5aaA6120Ed63F687Ee"
+            },
+            "launchPad": {
+                "presaleFacoty": "0x1aA248058a163D158681b0DBfE9B0AbE744B376a",
+                "currencyList": [
+                    {
+                        "symbol": "BNB",
+                        "decimals": 18,
+                        "address": "0x0000000000000000000000000000000000000000"
+                    },
+                    {
+                        "symbol": "USDT",
+                        "decimals": 18,
+                        "address": "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd"
+                    }
+                ]
+            },
+            "isTestChain": true
+        }
+    ]
+}
